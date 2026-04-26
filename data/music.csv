@@ -1,0 +1,101 @@
+user_id,track,artist,genre,duration,timestamp
+4,Wonderwall,Oasis,rock,258,2026-04-01 00:35
+4,SICKO MODE,Travis Scott,hip-hop,312,2026-04-01 07:50
+10,Yellow,Coldplay,rock,269,2026-04-01 09:20
+1,Believer,Imagine Dragons,rock,204,2026-04-01 11:45
+7,Watermelon Sugar,Harry Styles,pop,174,2026-04-01 13:15
+5,As It Was,Harry Styles,pop,167,2026-04-01 15:40
+1,Without Me,Eminem,hip-hop,290,2026-04-01 18:05
+7,Birdland,Weather Report,jazz,354,2026-04-01 19:35
+2,Lose Yourself,Eminem,hip-hop,326,2026-04-01 21:10
+8,Wake Me Up,Avicii,electronic,247,2026-04-01 23:20
+8,Blinding Lights,The Weeknd,pop,200,2026-04-02 01:10
+1,Back In Black,AC/DC,rock,255,2026-04-02 08:05
+6,Levitating,Dua Lipa,pop,203,2026-04-02 10:30
+6,Seven Nation Army,The White Stripes,rock,231,2026-04-02 12:55
+7,Dance Monkey,Tones And I,other,210,2026-04-02 14:20
+5,Can't Stop the Feeling!,Justin Timberlake,pop,236,2026-04-02 16:50
+5,Don't Know Why,Norah Jones,jazz,186,2026-04-02 17:40
+10,Someone Like You,Adele,pop,285,2026-04-02 20:00
+8,Moondance,Van Morrison,jazz,275,2026-04-02 22:25
+4,bad guy,Billie Eilish,pop,194,2026-04-02 23:55
+3,Radioactive,Imagine Dragons,rock,186,2026-04-03 02:00
+2,Ms. Jackson,OutKast,hip-hop,270,2026-04-03 07:35
+3,One More Time,Daft Punk,electronic,320,2026-04-03 09:55
+10,Come Away with Me,Norah Jones,jazz,198,2026-04-03 13:05
+8,Boulevard of Broken Dreams,Green Day,rock,260,2026-04-03 15:25
+5,Animals,Martin Garrix,electronic,304,2026-04-03 16:40
+9,Fly Me to the Moon,Frank Sinatra,jazz,147,2026-04-03 18:50
+3,All the Stars,Kendrick Lamar & SZA,hip-hop,232,2026-04-03 20:20
+9,Take Five,The Dave Brubeck Quartet,jazz,324,2026-04-03 21:45
+4,Levels,Avicii,electronic,199,2026-04-03 22:35
+1,Riptide,Vance Joy,other,204,2026-04-04 00:50
+5,Bohemian Rhapsody,Queen,rock,354,2026-04-04 06:45
+6,Lean On,Major Lazer & DJ Snake feat. MO,electronic,176,2026-04-04 08:40
+7,Shape of You,Ed Sheeran,pop,233,2026-04-04 11:10
+8,Rolling in the Deep,Adele,pop,228,2026-04-04 13:50
+5,Lucid Dreams,Juice WRLD,hip-hop,240,2026-04-04 15:05
+10,Numb,Linkin Park,rock,185,2026-04-04 17:55
+5,Clarity,Zedd feat. Foxes,electronic,271,2026-04-04 19:20
+9,Smells Like Teen Spirit,Nirvana,rock,301,2026-04-04 21:30
+2,Shake It Off,Taylor Swift,pop,219,2026-04-04 23:05
+4,Wonderwall,Oasis,rock,258,2026-04-05 01:25
+3,God's Plan,Drake,hip-hop,199,2026-04-05 07:15
+4,Midnight City,M83,electronic,244,2026-04-05 10:10
+4,HUMBLE.,Kendrick Lamar,hip-hop,177,2026-04-05 12:35
+2,Yellow,Coldplay,rock,269,2026-04-05 14:55
+7,Believer,Imagine Dragons,rock,204,2026-04-05 16:15
+6,Back In Black,AC/DC,rock,255,2026-04-05 18:25
+6,Heat Waves,Glass Animals,other,238,2026-04-05 20:45
+1,Watermelon Sugar,Harry Styles,pop,174,2026-04-05 22:10
+4,Seven Nation Army,The White Stripes,rock,231,2026-04-05 23:40
+10,Radioactive,Imagine Dragons,rock,186,2026-04-06 00:35
+5,No Role Modelz,J. Cole,hip-hop,292,2026-04-06 07:50
+1,As It Was,Harry Styles,pop,167,2026-04-06 09:20
+5,Sunflower,Post Malone & Swae Lee,other,158,2026-04-06 11:45
+2,Blinding Lights,The Weeknd,pop,200,2026-04-06 13:15
+4,Stronger,Kanye West,hip-hop,311,2026-04-06 15:40
+6,Do I Wanna Know?,Arctic Monkeys,other,272,2026-04-06 18:05
+7,Levitating,Dua Lipa,pop,203,2026-04-06 19:35
+2,SICKO MODE,Travis Scott,hip-hop,312,2026-04-06 21:10
+6,Boulevard of Broken Dreams,Green Day,rock,260,2026-04-06 23:20
+3,Can't Stop the Feeling!,Justin Timberlake,pop,236,2026-04-07 01:10
+1,Sweater Weather,The Neighbourhood,other,240,2026-04-07 08:05
+1,Someone Like You,Adele,pop,285,2026-04-07 10:30
+7,bad guy,Billie Eilish,pop,194,2026-04-07 12:55
+9,Bohemian Rhapsody,Queen,rock,354,2026-04-07 14:20
+2,Without Me,Eminem,hip-hop,290,2026-04-07 16:50
+8,Numb,Linkin Park,rock,185,2026-04-07 17:40
+4,Shape of You,Ed Sheeran,pop,233,2026-04-07 20:00
+9,Scary Monsters and Nice Sprites,Skrillex,electronic,244,2026-04-07 22:25
+2,Señorita,Shawn Mendes & Camila Cabello,other,191,2026-04-07 23:55
+1,Rolling in the Deep,Adele,pop,228,2026-04-08 02:00
+10,drivers license,Olivia Rodrigo,other,242,2026-04-08 07:35
+6,Shake It Off,Taylor Swift,pop,219,2026-04-08 09:55
+10,Smells Like Teen Spirit,Nirvana,rock,301,2026-04-08 13:05
+5,Watermelon Sugar,Harry Styles,pop,174,2026-04-08 15:25
+9,As It Was,Harry Styles,pop,167,2026-04-08 16:40
+3,Blinding Lights,The Weeknd,pop,200,2026-04-08 18:50
+7,Levitating,Dua Lipa,pop,203,2026-04-08 20:20
+9,Lose Yourself,Eminem,hip-hop,326,2026-04-08 21:45
+8,Don't You Worry Child,Swedish House Mafia,electronic,213,2026-04-08 22:35
+7,Cantaloupe Island,Herbie Hancock,jazz,332,2026-04-09 00:50
+3,Titanium,David Guetta feat. Sia,electronic,245,2026-04-09 06:45
+3,Lovely,Billie Eilish & Khalid,other,200,2026-04-09 08:40
+9,Feeling Good,Nina Simone,jazz,174,2026-04-09 11:10
+10,Ms. Jackson,OutKast,hip-hop,270,2026-04-09 13:50
+1,All the Stars,Kendrick Lamar & SZA,hip-hop,232,2026-04-09 15:05
+6,Can't Stop the Feeling!,Justin Timberlake,pop,236,2026-04-09 17:55
+8,Blue in Green,Miles Davis,jazz,328,2026-04-09 19:20
+1,Lucid Dreams,Juice WRLD,hip-hop,240,2026-04-09 21:30
+7,What a Wonderful World,Louis Armstrong,jazz,141,2026-04-09 23:05
+9,God's Plan,Drake,hip-hop,199,2026-04-10 01:25
+2,Someone Like You,Adele,pop,285,2026-04-10 07:15
+2,Despacito,Luis Fonsi & Daddy Yankee,other,229,2026-04-10 10:10
+3,Wake Me Up,Avicii,electronic,247,2026-04-10 12:35
+3,Wonderwall,Oasis,rock,258,2026-04-10 14:55
+4,HUMBLE.,Kendrick Lamar,hip-hop,177,2026-04-10 16:15
+10,bad guy,Billie Eilish,pop,194,2026-04-10 18:25
+1,One More Time,Daft Punk,electronic,320,2026-04-10 20:45
+2,Yellow,Coldplay,rock,269,2026-04-10 22:10
+8,Shape of You,Ed Sheeran,pop,233,2026-04-10 23:40
