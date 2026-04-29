@@ -1,3 +1,23 @@
+import time
+from functools import wraps
+
+def timer(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"[TIMER] {func.__name__} выполнилась за {end_time - start_time:.6f} сек.")
+        return result
+    return wrapper
+
+def logger(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        print(f"[LOGGER] Вызов функции: {func.__name__}")
+        return func(*args, **kwargs)
+    return wrapper
+
 def print_basic_info(info):
     print("Базовая информация")
     print(f"Количество строк: {info['rows']}")
