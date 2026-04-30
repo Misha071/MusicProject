@@ -74,7 +74,6 @@ def filter_tracks(df, genre=None, min_duration=None):
 
     return pd.DataFrame(rows)
 
-
 def build_report(df):
     genre_counts = df["genre"].value_counts()
     artist_counts = df["artist"].value_counts()
@@ -84,6 +83,13 @@ def build_report(df):
 
     longest_track = df.loc[df["duration"].idxmax()]
     avg_duration = df["duration"].mean()
+
+    genre_avg_duration = (
+        df.groupby("genre")["duration"]
+        .mean()
+        .sort_values(ascending=False)
+    )
+
     total_minutes = df["duration"].sum() / 60
 
     return {
@@ -102,5 +108,7 @@ def build_report(df):
         "longest_track": str(longest_track["track"]),
         "longest_track_artist": str(longest_track["artist"]),
         "longest_track_duration": int(longest_track["duration"]),
+        "genre_with_longest_avg_duration": genre_avg_duration.idxmax(),
+        "genre_with_longest_avg_duration_value": round(float(genre_avg_duration.max()), 2),
         "total_minutes": round(float(total_minutes), 2),
     }
