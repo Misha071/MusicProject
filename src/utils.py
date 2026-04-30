@@ -18,6 +18,22 @@ def logger(func):
         return func(*args, **kwargs)
     return wrapper
 
+def row_generator(df):
+    for _, row in df.iterrows():
+        yield row
+
+def filtered_track_generator(df, genre=None, min_duration=None):
+    for row in row_generator(df):
+        if genre is not None and row["genre"] != genre:
+            continue
+        if min_duration is not None and row["duration"] < min_duration:
+            continue
+        yield row
+
+def chunk_generator(df, chunk_size=10):
+    for start in range(0, len(df), chunk_size):
+        yield df.iloc[start:start + chunk_size]
+
 def print_basic_info(info):
     print("Базовая информация")
     print(f"Количество строк: {info['rows']}")
@@ -28,6 +44,14 @@ def print_basic_info(info):
     print(f"Уникальных треков: {info['unique_tracks']}")
     print(f"Уникальных исполнителей: {info['unique_artists']}")
     print(f"Уникальных жанров: {info['unique_genres']}")
+
+def print_duration_info(stats):
+    print("Статистика длительности")
+    print(f"Среднее: {stats['mean']} сек.")
+    print(f"Медиана: {stats['median']} сек.")
+    print(f"Стандартное отклонение: {stats['std']}")
+    print(f"Минимум: {stats['min']} сек.")
+    print(f"Максимум: {stats['max']} сек.")
 
 
 def print_report(report):
@@ -42,5 +66,10 @@ def print_report(report):
     print(
         f"Самый длинный трек: {report['longest_track']} — "
         f"{report['longest_track_artist']} ({report['longest_track_duration']} сек.)"
+    )
+    print(
+        "Жанр с самой большой средней длительностью: "
+        f"{report['genre_with_longest_avg_duration']} "
+        f"({report['genre_with_longest_avg_duration_value']} сек.)"
     )
     print(f"Общее время прослушивания: {report['total_minutes']} мин.")
