@@ -1,9 +1,12 @@
 import pandas as pd
+from src.utils import logger, timer
 
 
 REQUIRED_COLUMNS = ["user_id", "track", "artist", "genre", "duration", "timestamp"]
 
 
+@logger
+@timer
 def load_data(path):
     df = pd.read_csv(path)
 
