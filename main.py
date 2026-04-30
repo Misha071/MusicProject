@@ -7,9 +7,11 @@ from src.analysis import (
     hourly_stats,
     daily_stats,
     genre_duration_stats,
+    duration_stats,
+    filter_tracks,
     build_report,
 )
-from src.utils import print_basic_info, print_report
+from src.utils import print_basic_info, print_duration_info, print_report
 
 
 DATA_PATH = "data/music.csv"
@@ -38,6 +40,12 @@ def main():
 
     print("\nЖанры и длительность")
     print(genre_duration_stats(df))
+
+    duration = duration_stats(df)
+    print_duration_info(duration)
+
+    print("\n=== ФИЛЬТР: POP И ДЛИТЕЛЬНОСТЬ >= 200 ===")
+    print(filter_tracks(df, genre="pop", min_duration=200).head())
 
     report = build_report(df)
     print_report(report)

@@ -1,3 +1,9 @@
+import numpy as np
+import pandas as pd
+
+from src.utils import filtered_track_generator
+
+
 def get_basic_info(df):
     return {
         "rows": int(df.shape[0]),
@@ -47,6 +53,26 @@ def genre_duration_stats(df):
         .sort_values("listens", ascending=False)
         .round(2)
     )
+
+
+def duration_stats(df):
+    durations = df["duration"].to_numpy()
+
+    return {
+        "mean": round(float(np.mean(durations)), 2),
+        "median": round(float(np.median(durations)), 2),
+        "std": round(float(np.std(durations)), 2),
+        "min": int(np.min(durations)),
+        "max": int(np.max(durations)),
+    }
+
+def filter_tracks(df, genre=None, min_duration=None):
+    rows = list(filtered_track_generator(df, genre=genre, min_duration=min_duration))
+
+    if not rows:
+        return pd.DataFrame(columns=df.columns)
+
+    return pd.DataFrame(rows)
 
 
 def build_report(df):
