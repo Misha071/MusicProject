@@ -1,3 +1,5 @@
+import argparse
+
 from src.data_loader import load_data
 from src.analysis import (
     get_basic_info,
@@ -18,38 +20,57 @@ DATA_PATH = "data/music.csv"
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Анализ музыкальных прослушиваний")
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    subparsers.add_parser("info")
+    subparsers.add_parser("genres")
+    subparsers.add_parser("artists")
+    subparsers.add_parser("users")
+    subparsers.add_parser("duration")
+    subparsers.add_parser("hours")
+    subparsers.add_parser("days")
+    subparsers.add_parser("genre-duration")
+    subparsers.add_parser("report")
+
+    filter_parser = subparsers.add_parser("filter")
+    filter_parser.add_argument("--genre", type=str, default=None)
+    filter_parser.add_argument("--min_duration", type=int, default=None)
+
+    args = parser.parse_args()
+
     df = load_data(DATA_PATH)
 
-    info = get_basic_info(df)
-    print_basic_info(info)
+    if args.command == "info":
+        print_basic_info(get_basic_info(df))
 
-    print("\nЖанры: ")
-    print(genre_stats(df))
+    elif args.command == "genres":
+        print(genre_stats(df))
 
-    print("\nИсполнители: ")
-    print(artist_stats(df))
+    elif args.command == "artists":
+        print(artist_stats(df))
 
-    print("\nПользователи: ")
-    print(user_stats(df))
+    elif args.command == "users":
+        print(user_stats(df))
 
-    print("\nЧасы: ")
-    print(hourly_stats(df))
+    elif args.command == "duration":
+        print_duration_info(duration_stats(df))
 
-    print("\nДни: ")
-    print(daily_stats(df))
+    elif args.command == "hours":
+        print(hourly_stats(df))
 
-    print("\nЖанры и длительность")
-    print(genre_duration_stats(df))
+    elif args.command == "days":
+        print(daily_stats(df))
 
-    duration = duration_stats(df)
-    print_duration_info(duration)
+    elif args.command == "genre-duration":
+        print(genre_duration_stats(df))
 
-    print("\n=== ФИЛЬТР: POP И ДЛИТЕЛЬНОСТЬ >= 200 ===")
-    print(filter_tracks(df, genre="pop", min_duration=200).head())
+    elif args.command == "report":
+        print_report(build_report(df))
 
-    report = build_report(df)
-    print_report(report)
-
+    elif args.command == "filter":
+        result = filter_tracks(df, genre=args.genre, min_duration=args.min_duration)
+        print(result)
 
 if __name__ == "__main__":
     main()
